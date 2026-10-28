@@ -1,0 +1,1 @@
+Careers page is standalone at /careers/. Insert homepage-careers-notice.html in the deployed homepage template; it is NOT automatically integrated. Confirm the production build system and legal/privacy wording before publishing. No CV upload service is enabled.
