@@ -1,0 +1,15 @@
+<!-- KPS careers notice: insert near end of homepage body after reviewing existing design. -->
+<div id="kps-careers-notice" role="region" aria-label="Careers at Kim Partners Solicitors" hidden>
+ <button type="button" id="kps-careers-close" aria-label="Dismiss careers notice">×</button>
+ <strong>Build Your Future With Us</strong>
+ <p>We welcome expressions of interest from solicitors, paralegals, graduates and support professionals.</p>
+ <a href="/careers/">Explore Careers →</a>
+</div>
+<style>
+#kps-careers-notice{position:fixed;right:18px;bottom:18px;z-index:1000;width:min(310px,calc(100vw - 36px));box-sizing:border-box;background:#11243d;color:#fff;padding:20px 22px;border-radius:12px;box-shadow:0 8px 28px #0003;font:14px/1.5 system-ui,sans-serif}
+#kps-careers-notice strong{font-size:17px}#kps-careers-notice p{margin:8px 0 12px}#kps-careers-notice a{color:#e6c67b;font-weight:700}
+#kps-careers-close{position:absolute;right:8px;top:4px;background:transparent;border:0;color:white;font-size:24px;cursor:pointer}
+</style>
+<script>
+(function(){const el=document.getElementById('kps-careers-notice');if(!el)return;try{if(sessionStorage.getItem('kps-careers-dismissed')==='1')return}catch(e){}el.hidden=false;document.getElementById('kps-careers-close').addEventListener('click',()=>{el.hidden=true;try{sessionStorage.setItem('kps-careers-dismissed','1')}catch(e){}})})();
+</script>
